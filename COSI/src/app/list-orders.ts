@@ -1,0 +1,53 @@
+import {Order} from './order';
+
+export const Orders: Order[]=[
+	
+	{
+    OrderNumber:56000010,
+	OrderStatus:'Open',
+	Soldto:102000018,
+	Shipto:102000019,
+	MaterialNumber:'320987',
+	Quantity:12,
+	UOM:'CAS',
+	TrackingURL:'http://fedex.com/',
+	TrackingID:'1234',
+	ShipmentID:98093434,
+	ItemStatus:'Shipped',
+	InoviceID:9088834340,
+	PONumber:'POTESTPO',
+	POCreationDate:'12/31/2017'
+  },
+  {
+    OrderNumber:56000011,
+	OrderStatus:'Complete',
+	Soldto:102000018,
+	Shipto:102000019,
+	MaterialNumber:'320987',
+	Quantity:12,
+	UOM:'CAS',
+	TrackingURL:'http://fedex.com/',
+	TrackingID:'1234',
+	ShipmentID:98093434,
+	ItemStatus:'Shipped',
+	InoviceID:9088834340,
+	PONumber:'POTESTPO',
+	POCreationDate:'12/31/2017'
+  },
+  {
+    OrderNumber:56000012,
+	OrderStatus:'Shipped',
+	Soldto:102000018,
+	Shipto:102000019,
+	MaterialNumber:'320987',
+	Quantity:12,
+	UOM:'CAS',
+	TrackingURL:'http://fedex.com/',
+	TrackingID:'1234',
+	ShipmentID:98093434,
+	ItemStatus:'Shipped',
+	InoviceID:9088834340,
+	PONumber:'POTESTPO',
+	POCreationDate:'12/31/2017'
+  }
+];

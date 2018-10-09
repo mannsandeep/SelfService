@@ -1,0 +1,54 @@
+<app-messages></app-messages>
+<div>
+<table  >
+<tbody>
+	<thead>
+	<tr>
+		<th><a>Order No.</a></th>
+		<th><a>PO No.</a></th>
+		<th   id="po_date"><a href="#" title="Sort this list by PO Date" onclick="">PO Date</a></th>
+		<th  id="ship_to"><a>Ship-To</a></th>
+		<th   id="sold_to"><a href="#" title="Sort this list by Sold-To Address" onclick="">Sold-To</a></th>
+		<th   id="status" colspan="2"><a href="#" title="Sort this list by Status" onclick="">Status</a></th>
+		<th   id="invoice" colspan="2">Invoices</th>
+	</tr>
+	</thead>
+	
+	<tr>
+	<ul class="orders">
+		  <li *ngFor="let order of orders"> 
+		  <!--[class.selected]="order === selectedOrder" (click)="onSelect(order)">-->
+	
+			<td><a routerLink="/detail/{{order._id}}">
+			<span class="badge">{{order.OrderNumber}}</span></a></td>
+			
+		<td><div><input [(ngModel)]="order.PONumber" placeholder="PONumber"></div></td>
+		<td>{{order.POCreationDate}}</td>
+		<td>{{order.Shipto}}</td>
+		<td>{{order.Soldto}}</td>
+		<td>{{order.OrderStatus}}</td>
+		<td><div id="" > <h1>{{order.InoviceID}}</h1></div></td>
+     
+	 </li>
+	 </ul>
+	 </tr>
+	 </tbody>
+</table>
+</div>	
+
+<!--<app-order-detail [order]="selectedOrder"></app-order-detail>-->
+
+<!--
+<h2>Here are some links to help you start: </h2>
+<ul>
+  <li>
+    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
+  </li>
+  <li>
+    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
+  </li>
+  <li>
+    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
+  </li>
+</ul>
+-->
